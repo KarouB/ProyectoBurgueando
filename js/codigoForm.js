@@ -63,10 +63,11 @@ function validarDatos(e){
        return false;
     }
 
-   enviarFormulario(e);
    console.log("Pedido enviado correctamente");
    limpiarCampos();
+   alert("Pedido enviado correctamente");
 }
+
 
 
 //funciones de validacion
@@ -137,10 +138,4 @@ function limpiarCampos()
     formulario.comentario.value = "";
 }
  
-//enviar formulario
-function enviarFormulario(e)
-{    
-   e.preventDefault();
-   
-}
         
