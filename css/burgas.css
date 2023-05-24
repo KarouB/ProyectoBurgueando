@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Signika+Negative:wght@700&display=swap');
 
 /* GENERALES */
-
+html
+{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
