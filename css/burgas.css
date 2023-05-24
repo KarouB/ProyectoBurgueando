@@ -1,0 +1,487 @@
+/* Importo las fuentes que voy a usar de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Signika+Negative:wght@700&display=swap');
+
+/* GENERALES */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #7444af;
+}
+
+li, a {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 20px;
+  color: #fefced;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  color: #c7c5b9;
+}
+
+
+/*--- HEADER ---*/
+header
+{
+  background-color: #7c54ad;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+}
+nav
+{
+  width: 100%;
+}
+.nav1
+{
+  display: flex;
+  align-items: center;  
+}
+.nav1 .nav-links
+{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav .nav-links li
+{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav1 .nav-links a
+{
+  font-size: 1.3rem;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.nav1 .nav-links li:hover
+{
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
+}
+.nav1 .nav-links li a:hover
+{
+  color: #e6d347;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  height: 5rem;
+  width: 100%;
+}
+.nav-items {
+  text-transform: uppercase;
+}
+
+
+/*PORTADA */
+  
+.cta 
+{
+  background-image: url(../img/cta-patron.svg);
+  text-align: center;
+  padding-top: 1.5px;
+}
+  
+.cta-contenido
+{
+  background-size: contain;
+  background-image: url(../img/gradiente-vio.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+  
+.cta-img
+{
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+  
+.cta-texto h1
+{
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 3rem;
+  color: #fefced;
+  text-shadow: 1px 1px 2px #99988f;
+  margin-bottom: 10px;
+}
+  
+.cta-texto p
+{
+  font-size: 1.5rem;  
+  font-weight: 500;
+  line-height: 0.2;
+  color:#fefced;
+}
+  
+.cta-texto hr
+{
+  margin-bottom: 50px;
+  width: 100%;
+  border: 2.5px dashed #e6d347;
+}  
+  
+.cta-boton
+{
+  background-color:#e6d347;
+  color: #fefced;
+  padding: 10px 26px;
+  border-radius: 10px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.cta-boton:hover
+{
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  color: #fff;
+  font-weight: bold;
+  animation:slidebg 5s linear infinite;
+}
+  @keyframes slidebg 
+  {
+    to 
+    {
+      background-position:20vw;
+    }
+   }
+
+
+/*es el h2*/
+.tituloSecciones
+{
+  font-family:  Tahoma, sans-serif;
+  font-size: xx-large;
+  color: black;
+  background-color: #e6d347; text-align: center; padding: 5px auto;
+}
+
+/*SECCION MENU*/
+.section-combos/*cambio de id a clase*/
+{
+  background-image: url(../img/cta-patron.svg);
+  text-align: center;
+  padding-top: 1.4rem;
+  padding-bottom: 1.5rem;
+}
+.contenedor-combos
+{
+  background-size: contain;
+  background-color: #7444af; 
+}
+
+.contenedor-combos
+{
+  padding: 50px 40px;
+  display: grid;
+  width: 90%;
+  margin: 70px auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.section-combos .contenedor-combos .hamburguesa img 
+{
+  display: grid;
+  justify-items: center;
+  overflow:hidden;
+  margin:auto;
+  filter: drop-shadow(0 0 20px #121212);
+}
+
+/*Para controlar el tamaño de imagenes*/
+.hamburguesa img
+{
+  max-width: 90%;
+  max-height: 90%;
+  aspect-ratio: 3/2;
+  object-fit: contain;  
+}
+.section-combos .contenedor-combos .hamburguesa img:hover
+{
+  scale: calc(1.1);
+  transition: 400ms;
+  cursor: pointer;
+}
+.hamburguesa-info
+{
+  line-height: 1rem;
+  padding: auto;
+  margin: auto;
+  text-align:center;
+}
+.hamburguesa-info h2
+{
+  color: #e6d347;
+}
+.hamburguesa-info p
+{
+  color: #fff;
+}
+
+
+/*SECCION NOSOTROS*/
+.nosotros_seccion
+{
+  display: block;
+}
+
+.seccion_nosotros-info h1
+{
+  color: #FFF;
+  text-align: center;
+}
+.seccion_nosotros-info P
+{
+  color: #FFF;
+  text-align: center;
+}
+/*Sobre nosotros*/
+
+.sobre_nosotros {
+  background-size: contain;
+  background-image: url(../img/gradiente-vio.png);
+}
+
+.nosotros_container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 1em;
+  align-items: center;
+}
+
+.nosotros_body {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+.nosotros_body--show {
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.nosotros_img {
+  width: 250px;
+  height: 250px ;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.nosotros_texto {
+  max-width: 700px;
+}
+
+.subtitulo
+{
+  color:#e6d347;
+}
+
+.nosotros_p
+{
+  font-size: 1rem;
+  color: #fff;
+}
+.nosotros_flecha {
+  width: 90%;
+  margin:20px;
+  cursor: pointer;
+}
+
+/*SECCION UBICACION*/
+.seccion_ubicacion
+{
+  background-size: contain;
+  background-image: url(../img/gradiente-vio.png);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+/*SECCION FORMULARIO*/
+
+.formulario 
+{
+  background-color: #D9AFD9;
+  margin: 1%;
+  padding: 50px 50px;
+  box-shadow: 0 0px 5px rgba(56, 1, 88, 0.2);
+  text-align: center;
+  width: 90%;
+}
+
+.titulo 
+{
+  color:#283629;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family:  Tahoma, sans-serif;
+  color: black;
+  background-color: #e6d347; text-align: center; padding: 1px 1px;
+}
+
+label
+{
+  color:#000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+
+/*inputs*/
+.formulario__grupo div
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input, textarea, select
+{
+  padding: 17px 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: #f4ebff;
+  border: 2px solid #f9ebff59;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder
+{
+  color: #b5cab5;
+}
+
+/*input desabilitado*/
+input:disabled
+{
+  background-color:#504a5331;
+}
+
+
+#entrega
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 1rem;
+  accent-color:#bb76e4 ;    
+}
+
+/*elegir combo*/
+.input-select
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+/*boton*/
+.envio-pedido
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-enviar {
+  width: min-content;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f4ebff;
+  background-color: #945ada;
+}
+.btn-enviar:hover 
+{
+  background-color: #f4ebff;
+  color:#5f635f; 
+}
+
+
+/*FOOTER*/
+footer
+{
+  background-color:#e6d347 ;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px
+}
+#contacto
+{
+  padding: 17px 0;
+}
+#contacto .fila
+{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+#contacto .fila h3
+{
+  color: #945ada;
+}
+
+#contacto a
+{
+  text-decoration: none;
+  color:#000;
+  font-size: 100%;
+  text-align: left;
+  display: block;
+  margin-bottom: 3px;
+}
+#contacto a:hover/*cambie el hover*/
+{
+  text-decoration: none;
+  color: #945ada;
+  transition: 400ms;
+}
+#contacto h3
+{
+  text-align: left;
+  margin-bottom: 12px;
+}
+#contacto .media
+{
+  display: flex;
+  align-items: center;
+}
+#contacto .media i
+{
+  display: block;
+  margin-right: 10px;
+}
+
