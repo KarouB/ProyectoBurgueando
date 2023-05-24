@@ -34,20 +34,24 @@ p {
 /*--- HEADER ---*/
 header
 {
-  background-color: #7c54ad;
   width: 100%;
+  background-color: #7c54ad;
+  overflow: hidden; 
   position: fixed;
   z-index: 200;
 }
+
 nav
 {
   width: 100%;
 }
+
 .nav1
 {
   display: flex;
   align-items: center;  
 }
+
 .nav1 .nav-links
 {
   list-style: none;
@@ -64,7 +68,7 @@ nav .nav-links li
 
 .nav1 .nav-links a
 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color:#ffffff;
   text-decoration: none;
 }
@@ -168,13 +172,14 @@ nav .nav-links li
    }
 
 
-/*es el h2*/
 .tituloSecciones
 {
   font-family:  Tahoma, sans-serif;
   font-size: xx-large;
   color: black;
-  background-color: #e6d347; text-align: center; padding: 5px auto;
+  background-color: #e6d347; 
+  text-align: center; 
+  padding: 100px auto;
 }
 
 /*SECCION MENU*/
@@ -182,8 +187,8 @@ nav .nav-links li
 {
   background-image: url(../img/cta-patron.svg);
   text-align: center;
-  padding-top: 1.4rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
 }
 .contenedor-combos
 {
@@ -332,7 +337,7 @@ nav .nav-links li
 
 .formulario 
 {
-  background-color: #D9AFD9;
+  background-color: #d390ff;
   margin: 1%;
   padding: 50px 50px;
   box-shadow: 0 0px 5px rgba(56, 1, 88, 0.2);

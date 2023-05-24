@@ -1,0 +1,358 @@
+/* Importo las fuentes que voy a usar de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Signika+Negative:wght@700&display=swap');
+
+/* GENERALES */
+html
+{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #7444af;
+}
+
+li, a {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 20px;
+  color: #fefced;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  color: #c7c5b9;
+}
+
+
+/*--- HEADER ---*/
+header
+{
+  width: 100%;
+  background-color: #7c54ad;
+  overflow: hidden; 
+  position: relative;
+  z-index: 200;
+}
+
+nav
+{
+  width: 100%;
+}
+
+.nav1
+{
+  display: flex;
+  align-items: center;  
+}
+
+.nav1 .nav-links
+{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav .nav-links li
+{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav1 .nav-links a
+{
+  font-size: 1.5rem;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.nav1 .nav-links li:hover
+{
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
+}
+.nav1 .nav-links li a:hover
+{
+  color: #e6d347;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  height: 5rem;
+  width: 100%;
+}
+.nav-items {
+  text-transform: uppercase;
+}
+
+/*SECCION MENU*/
+.bebidas/*cambio de id a clase*/
+{
+  background-image: url(../img/cta-patron.svg);
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+}
+.contenedor-bebidas
+{
+  background-size: contain;
+  background-color: #7444af; 
+}
+
+.contenedor-bebidas
+{
+  padding: 50px 40px;
+  display: grid;
+  width: 90%;
+  margin: 70px auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+.bebidas .contenedor-bebidas .coctel img 
+{
+  display: grid;
+  justify-items: center;
+  overflow:hidden;
+  margin:auto;
+}
+
+.coctel img
+{
+  max-width: 90%;
+  max-height: 90%;
+  aspect-ratio: 3/2;
+  object-fit: contain;  
+}
+.coctel img:hover
+{
+  cursor: pointer;
+}
+.coctel-info
+{
+  line-height: 1rem;
+  padding: auto;
+  margin: auto;
+  text-align:center;
+}
+.nombre
+{
+  color: #e6d347;
+}
+.alcoholic
+{
+  color: #fff;
+}
+
+ /*FOOTER*/
+footer
+{
+  background-color:#e6d347 ;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px
+}
+#contacto
+{
+  padding: 17px 0;
+}
+#contacto .fila
+{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+#contacto .fila h3
+{
+  color: #945ada;
+}
+
+#contacto a
+{
+  text-decoration: none;
+  color:#000;
+  font-size: 100%;
+  text-align: left;
+  display: block;
+  margin-bottom: 3px;
+}
+#contacto a:hover
+{
+  text-decoration: none;
+  color: #945ada;
+  transition: 400ms;
+}
+#contacto h3
+{
+  text-align: left;
+  margin-bottom: 12px;
+}
+#contacto .media
+{
+  display: flex;
+  align-items: center;
+}
+#contacto .media i
+{
+  display: block;
+  margin-right: 10px;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+  header {
+    white-space: nowrap;
+  }
+
+  .nav1 .nav-links li {
+    padding: 0 5px;
+  }
+
+  .nav1 .nav-links a {
+    font-size: 1.1rem;
+  }
+
+  .nav1 .logo img {
+    width: 50%;
+  }
+
+  /* MENU */
+
+  .contenedor-bebidas {
+    margin: 30px 0;
+  }
+
+  .coctel img {
+    width: 100%;
+    aspect-ratio: 2.5;
+    object-fit: contain;
+  }
+
+  /* FOOTER */
+
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  #contacto .fila {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 650.1px) 
+{
+
+  @media only screen and (min-width: 650.1px) 
+
+  {
+    header {
+      position: fixed;
+      z-index: 200;
+    }
+
+    .nav1 .nav-links li {
+      padding: 0 5px;
+      margin-right: 20px;
+    }
+
+    .nav1 .nav-links a {
+      font-size: 1.3rem;
+    }
+
+    .nav1 .logo img {
+      max-width: 75%;
+    }
+
+    /* MENU */
+
+    .contenedor-bebidas {
+      padding: 20px 40px;
+      width: 85%;
+      margin: 10px auto;
+    }
+
+    .coctel img {
+      width: 100%;
+      aspect-ratio: 2;
+      object-fit: contain;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      font-size: 1rem;
+      padding: 5px
+    }
+
+    #contacto .fila {
+      justify-content: space-around;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    /* HEADER */
+
+    header {
+      position: relative;
+      z-index: 200;
+    }
+
+    .nav1 .nav-links li {
+      padding: 0 5px;
+    }
+
+    .nav1 .nav-links a {
+      font-size: 1.4rem;
+      margin-right: 20px;
+    }
+
+    .nav1 .logo img {
+      width: 100%;
+    }
+
+    /* MENU */
+
+    .contenedor-bebidas {
+      padding: 50px 40px;
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .coctel img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      font-size: 1.1rem;
+      padding: 5px;
+    }
+
+    #contacto .fila {
+      justify-content: space-around;
+    }
+  }
+}
